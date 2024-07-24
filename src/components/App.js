@@ -11,6 +11,8 @@ function App() {
             setRelation('Please enter valid input');
             return
         }
+        let str1 = name1;
+        let str2 = name2;
         for (let i = 0; i < str1.length; i++) {
             for (let j = 0; j < str2.length; j++) {
                 if (str1[i] == str2[j]) {
