@@ -36,8 +36,8 @@ function App() {
     return( 
     <div id='main'>
         <form onSubmit={checkStatus}>
-            <input type='text' data-testid="input1" placeholder='Enter first name' value={name1} onChange={(e) => setName1(e.target.value)}/>
-            <input type='text' data-testid="input2" placeholder='Enter first name' value={name2} onChange={(e) => setName2(e.target.value)}/>
+            <input type='text' name='name1' data-testid="input1" placeholder='Enter first name' value={name1} onChange={(e) => setName1(e.target.value)}/>
+            <input type='text' name='name2' data-testid="input2" placeholder='Enter second name' value={name2} onChange={(e) => setName2(e.target.value)}/>
             <button data-testid="calculate_relationship" type="submit">Calculate Relationship</button>
             <button data-testid="clear" type="button" onClick={clearNames} >Clear</button>
         </form>
